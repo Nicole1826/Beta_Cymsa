@@ -1,0 +1,69 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    height: 100%;
+}
+
+.slider_container {
+    width: 100%;
+   height: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    scroll-snap-type: x mandatory;
+    
+  }
+
+  
+.item {
+    scroll-snap-align: none center;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+   
+  
+    overflow: hidden;
+  }
+  
+
+.item img{
+    width: 100%;
+    height: 100%;
+
+}
+
+/*
+
+.horizontal_slider {
+    display: block;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: none center;
+
+}
+
+/*this is for chrome / firefox/ opera and safari*/ /*
+.horizontal_slider::-webkit-scrollbar {
+    display: none;
+}
+
+/* for ms*/ /*
+.horizontal_slider {
+    -ms-overflow-style: none;
+}
+
+.slider_container {
+    display: block;
+    white-space: nowrap;
+   
+}
+
+.item {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+  
+}
+
